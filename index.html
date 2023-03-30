@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        console.log('')
         console.log('task#1')
         list = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
         for (item in list) {
@@ -21,8 +22,22 @@
             }
         }
 
+        console.log('')
         console.log('task#2')
 
+        listOne = [1, 5, 12, 4, 3]
+        listTwo = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+        listTree = [3, 10, 17]
+
+        function listAvg(list) {
+            let avg = list.reduce((total, value) => total + value, 0) / list.length
+            console.log(avg)
+        }
+
+        listAvg(listOne)
+        listAvg(listTwo)
+        listAvg(listTree)
+        
     </script>
 </body>
 
