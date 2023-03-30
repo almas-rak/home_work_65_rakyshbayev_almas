@@ -10,20 +10,25 @@
 
 <body>
     <script>
-        console.log('')
-        console.log('task#1')
+
+        print = function (data) {
+            console.log(data)
+        }
+
+        print('')
+        print('task#1')
         list = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
         for (item in list) {
             if (list[item] === 'молоко') {
-                console.log('хорошо')
+                print('хорошо')
             }
             else {
-                console.log('Плохо')
+                print('Плохо')
             }
         }
 
-        console.log('')
-        console.log('task#2')
+        print('')
+        print('task#2')
 
         listOne = [1, 5, 12, 4, 3]
         listTwo = [2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -31,13 +36,35 @@
 
         function listAvg(list) {
             let avg = list.reduce((total, value) => total + value, 0) / list.length
-            console.log(avg)
+            print(avg)
         }
 
         listAvg(listOne)
         listAvg(listTwo)
         listAvg(listTree)
-        
+
+        print('')
+        print('task#3')
+
+
+        function qestion() {
+            let qestion = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?")
+                switch(qestion){ 
+                    case '5':
+                        alert("Ответ верный");
+                        break
+                    case 'пять':
+                        alert("Ответ верный");
+                        break
+                    case 'Пять':
+                        alert("Ответ верный");
+                        break
+                    default:
+                        alert("Ответ неверный")
+                }
+        }
+
+        qestion()
     </script>
 </body>
 
