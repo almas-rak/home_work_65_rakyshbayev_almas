@@ -49,19 +49,19 @@
 
         function qestion() {
             let qestion = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?")
-                switch(qestion){ 
-                    case '5':
-                        alert("Ответ верный");
-                        break
-                    case 'пять':
-                        alert("Ответ верный");
-                        break
-                    case 'Пять':
-                        alert("Ответ верный");
-                        break
-                    default:
-                        alert("Ответ неверный")
-                }
+            switch (qestion) {
+                case '5':
+                    alert("Ответ верный");
+                    break
+                case 'пять':
+                    alert("Ответ верный");
+                    break
+                case 'Пять':
+                    alert("Ответ верный");
+                    break
+                default:
+                    alert("Ответ неверный")
+            }
         }
 
         qestion()
@@ -73,14 +73,14 @@
             name: 'Дональд',
             color: 'белый',
             age: '1',
-            toStr: function(){
+            toStr: function () {
                 print(this.name + ', ' + this.color + ', ' + this.age + 'год');
             },
-            say: function(){
+            say: function () {
                 print('кря кря');
             }
         }
-        
+
         duck.toStr()
         duck.say()
     </script>
